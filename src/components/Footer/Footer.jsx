@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center">
           {/* Left side: Branding/Name */}
           <div className="mb-6 lg:mb-0 text-center lg:text-left">
-            <h2 className="text-3xl font-bold">Ameet Kilambu</h2>
+            <h2 className="text-3xl font-bold font-windsong">Ameet Kilambu</h2>
             <p className="text-gray-400 mt-2">Associate Frontend Developer</p>
           </div>
 
