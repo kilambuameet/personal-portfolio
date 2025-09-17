@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa'; // Icons for social links
+import React from "react";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa"; // Icons for social links
 
 const Footer = () => {
   return (
@@ -9,13 +9,13 @@ const Footer = () => {
           {/* Left side: Branding/Name */}
           <div className="mb-6 lg:mb-0 text-center lg:text-left">
             <h2 className="text-3xl font-bold">Ameet Kilambu</h2>
-            <p className="text-gray-400 mt-2">Full-Stack Developer & Designer</p>
+            <p className="text-gray-400 mt-2">Associate Frontend Developer</p>
           </div>
 
           {/* Middle: Social links */}
           <div className="flex space-x-6 mb-6 lg:mb-0">
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/kilambuameet"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-500 transition-colors"
@@ -23,7 +23,7 @@ const Footer = () => {
               <FaGithub className="text-2xl" />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="https://www.linkedin.com/in/amit-kilambu-987481b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-500 transition-colors"
@@ -31,7 +31,7 @@ const Footer = () => {
               <FaLinkedin className="text-2xl" />
             </a>
             <a
-              href="https://instagram.com/__amteyy98__"
+              href="https://www.instagram.com/am_teyy_?igsh=MTl0aGpsYThrOW9paA=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-pink-500 transition-colors"
@@ -39,7 +39,7 @@ const Footer = () => {
               <FaInstagram className="text-2xl" />
             </a>
             <a
-              href="mailto:your-email@example.com"
+              href="mailto:amitkilambu8@gmail.com"
               className="text-white hover:text-red-500 transition-colors"
             >
               <FaEnvelope className="text-2xl" />
