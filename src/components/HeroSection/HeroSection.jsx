@@ -1,4 +1,3 @@
-import React from "react";
 import myphoto from "../../assets/photomy.jpg";
 import Buttons from "../Buttons/Buttons";
 import SocialCards from "../cards/socialCards/SocialCards";
