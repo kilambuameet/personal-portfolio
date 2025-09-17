@@ -15,7 +15,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section className="py-16 bg-slate-50" id="skills">
+    <section className="py-16 bg-slate-50 scroll-mt-10" id="skills">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-slate-800 mb-12 font-mono">
           My Skills

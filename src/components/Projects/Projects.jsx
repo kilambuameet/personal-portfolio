@@ -38,7 +38,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className="py-16 bg-slate-50 mt-10" id="projects">
+    <section className="py-16 bg-slate-50 mt-10 scroll-mt-10" id="projects">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-slate-800 mb-12 font-mono">
           My Projects

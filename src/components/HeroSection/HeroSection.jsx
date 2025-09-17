@@ -7,7 +7,7 @@ const HeroSection = () => {
     <>
       <section
         id="home"
-        className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 py-12 lg:py-20"
+        className="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between px-4 py-12 lg:py-20 scroll-mt-10"
       >
         {/* Text Section */}
         <div className="w-full lg:w-2/4 text-center lg:text-left space-y-5">

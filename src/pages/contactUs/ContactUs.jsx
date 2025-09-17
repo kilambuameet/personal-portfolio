@@ -22,7 +22,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-16 bg-slate-50" id="contact">
+    <section className="py-16 bg-slate-50 scroll-mt-10" id="contact">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-slate-800 mb-12 font-mono">
           Contact Me
@@ -43,7 +43,9 @@ const ContactForm = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-indigo-600 text-xl" />
-                <span className="text-slate-700 text-lg">amitkilambu8@gmail.com</span>
+                <span className="text-slate-700 text-lg">
+                  amitkilambu8@gmail.com
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <FaPhone className="text-indigo-600 text-xl" />
