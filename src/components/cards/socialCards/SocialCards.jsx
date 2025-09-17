@@ -1,71 +1,64 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 const SocialCards = () => {
+  const socialLinks = [
+    {
+      name: "Facebook",
+      icon: <FaFacebook size={30} />,
+      href: "https://www.facebook.com/share/1WBzh8p8y1/",
+      color: "text-blue-600",
+    },
+
+    {
+      name: "Instagram",
+      icon: <FaInstagram size={30} />,
+      href: "https://www.instagram.com/am_teyy_?igsh=MTl0aGpsYThrOW9paA==",
+      color: "text-pink-500",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin size={30} />,
+      href: "https://www.linkedin.com/in/amit-kilambu-987481b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      color: "text-blue-700",
+    },
+    {
+      name: "GitHub",
+      icon: <FaGithub size={30} />,
+      href: "https://github.com/kilambuameet",
+      color: "text-blue-400",
+    },
+  ];
+
   return (
-    <>
-      <div className="container mx-auto text-center mt-10">
-        {/* Heading */}
-        <div className="text-4xl font-bold mb-6">
-          <h1>Connect With Me</h1>
-        </div>
+    <section className="py-16 bg-slate-50">
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-12 font-mono text-slate-800">
+          Connect With Me
+        </h2>
 
-        {/* Social Cards */}
-        <div className="flex flex-wrap justify-center gap-6 w-[90%] m-auto">
-          {/* Facebook Card */}
-          <div className="flex items-center gap-3 p-4 bg-gray-200 rounded-xl shadow-md w-64 hover:bg-gray-300 transition-all duration-300">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-5xl mx-auto">
+          {socialLinks.map((social, index) => (
             <a
-              href="https://facebook.com"
+              key={index}
+              href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600"
+              className={`flex items-center justify-center gap-3 p-6 bg-indigo-50 rounded-xl shadow-md hover:scale-105 hover:shadow-lg transition-transform duration-300`}
             >
-              <FaFacebook size={30} />
+              <span className={`${social.color}`}>{social.icon}</span>
+              <span className="font-medium text-slate-700">{social.name}</span>
             </a>
-            <p className="font-medium">Facebook</p>
-          </div>
-
-          {/* Twitter Card */}
-          <div className="flex items-center gap-3 p-4 bg-gray-200 rounded-xl shadow-md w-64 hover:bg-gray-300 transition-all duration-300">
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400"
-            >
-              <FaTwitter size={30} />
-            </a>
-            <p className="font-medium">Twitter</p>
-          </div>
-
-          {/* Instagram Card */}
-          <div className="flex items-center gap-3 p-4 bg-gray-200 rounded-xl shadow-md w-64 hover:bg-gray-300 transition-all duration-300">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-500"
-            >
-              <FaInstagram size={30} />
-            </a>
-            <p className="font-medium">Instagram</p>
-          </div>
-
-          {/* LinkedIn Card */}
-          <div className="flex items-center gap-3 p-4 bg-gray-200 rounded-xl shadow-md w-64 hover:bg-gray-300 transition-all duration-300">
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-700"
-            >
-              <FaLinkedin size={30} />
-            </a>
-            <p className="font-medium">LinkedIn</p>
-          </div>
+          ))}
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
