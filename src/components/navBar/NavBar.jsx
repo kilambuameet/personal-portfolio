@@ -7,11 +7,11 @@ const NavBar = () => {
   const handleLinkClick = () => setIsOpen(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-gradient-to-br from-blue-100 via-white to-blue-100 shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-3xl font-bold text-blue-700 tracking-widest font-sassy">
-          AmeetFolio
+          Ameet.dev
         </h1>
 
         {/* Desktop Links */}

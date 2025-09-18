@@ -33,19 +33,20 @@ const hobbiesData = [
 
 const Hobbies = () => {
   return (
-    <section className="py-16 bg-slate-50">
+    <section className="md:py-16 py-10 bg-slate-50">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-slate-800 mb-12 font-mono">
+        <h2 className="md:text-4xl text-2xl font-bold text-center text-slate-800 font-mono">
           Hobbies & Interests
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <hr className="w-28 mx-auto border-t-2 border-black my-3" />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:mt-12 mt-5">
           {hobbiesData.map((hobby, index) => (
             <div
               key={index}
               className="bg-white shadow-sm ring-1 ring-slate-200 rounded-xl p-6 flex flex-col items-center text-center hover:shadow-lg hover:ring-indigo-200 transition duration-300"
             >
               <div className="mb-4">{hobby.icon}</div>
-              <h3 className="text-2xl font-semibold text-indigo-600 mb-2">
+              <h3 className="md:text-2xl text-lg font-semibold text-indigo-600 mb-2">
                 {hobby.name}
               </h3>
               <p className="text-slate-700">{hobby.description}</p>

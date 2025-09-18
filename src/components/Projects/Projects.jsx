@@ -38,19 +38,23 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className="py-16 bg-slate-50 mt-10 scroll-mt-10" id="projects">
+    <section
+      className="md:py-16 py-10 bg-slate-50 mt-10 scroll-mt-10"
+      id="projects"
+    >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-slate-800 mb-12 font-mono">
+        <h2 className="md:text-4xl text-2xl font-bold text-center text-slate-800  font-mono">
           My Projects
         </h2>
+        <hr className="w-28 mx-auto border-t-2 border-black my-3" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:mt-12 mt-5">
           {projectsData.map((project, index) => (
             <div
               key={index}
               className="bg-white rounded-xl p-6 shadow-sm ring-1 ring-slate-200 hover:shadow-lg hover:ring-indigo-200 transition duration-300"
             >
-              <h3 className="text-2xl font-semibold text-indigo-600 mb-3">
+              <h3 className="md:text-2xl text-lg font-semibold text-indigo-600 mb-3">
                 {project.title}
               </h3>
 

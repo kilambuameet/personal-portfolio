@@ -22,19 +22,23 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-16 bg-slate-50 scroll-mt-10" id="contact">
+    <section
+      className="md:py-16 py-10 bg-gradient-to-br from-blue-100 via-white to-blue-100  scroll-mt-10"
+      id="contact"
+    >
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-slate-800 mb-12 font-mono">
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-slate-800 font-mono">
           Contact Me
         </h2>
+        <hr className="w-28 mx-auto border-t-2 border-black my-3" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-12 gap-8 items-center md:mt-12 mt-5 ">
           {/* Left Side - Info / Illustration */}
-          <div className="flex flex-col justify-center space-y-6">
-            <h3 className="text-3xl font-semibold text-indigo-600 mb-4">
+          <div className="flex flex-col justify-center">
+            <h3 className="md:text-3xl text-lg font-semibold text-indigo-600">
               Get in Touch
             </h3>
-            <p className="text-slate-700 text-lg">
+            <p className="text-slate-700 md:text-lg text-base my-3">
               I’m always open to discussing new projects, creative ideas, or
               opportunities to be part of your visions. Feel free to reach out
               via the form or contact details below.
@@ -43,17 +47,21 @@ const ContactForm = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-indigo-600 text-xl" />
-                <span className="text-slate-700 text-lg">
+                <span className="text-slate-700 md:text-lg text-base">
                   amitkilambu8@gmail.com
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <FaPhone className="text-indigo-600 text-xl" />
-                <span className="text-slate-700 text-lg">+977 9860678384</span>
+                <span className="text-slate-700 md:text-lg text-base">
+                  +977 9860678384
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="text-indigo-600 text-xl" />
-                <span className="text-slate-700 text-lg">Bhaktapur, Nepal</span>
+                <span className="text-slate-700 md:text-lg text-base">
+                  Bhaktapur, Nepal
+                </span>
               </div>
             </div>
           </div>
@@ -73,6 +81,7 @@ const ContactForm = () => {
                     type="text"
                     name="name"
                     id="name"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -91,6 +100,7 @@ const ContactForm = () => {
                     type="email"
                     name="email"
                     id="email"
+                    placeholder="Your Email"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -108,6 +118,7 @@ const ContactForm = () => {
                   <textarea
                     name="message"
                     id="message"
+                    placeholder="Any Message..."
                     rows="5"
                     value={formData.message}
                     onChange={handleChange}

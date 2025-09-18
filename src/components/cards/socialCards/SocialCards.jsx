@@ -36,13 +36,14 @@ const SocialCards = () => {
   ];
 
   return (
-    <section className="py-16 bg-slate-50">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12 font-mono text-slate-800">
+    <section className="md:py-16 py-10 bg-gradient-to-tr from-blue-100 via-white to-blue-100">
+      <div className="container mx-auto text-center px-4">
+        <h2 className="md:text-4xl text-2xl font-bold font-mono text-slate-800">
           Connect With Me
         </h2>
+        <hr className="w-28 mx-auto border-t-2 border-black my-3" />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full md:mt-12 mt-5">
           {socialLinks.map((social, index) => (
             <a
               key={index}
