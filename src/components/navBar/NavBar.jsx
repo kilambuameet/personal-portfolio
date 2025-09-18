@@ -67,49 +67,59 @@ const NavBar = () => {
 
           {/* Slide-in panel */}
           <div
-            className="w-3/4 max-w-xs bg-white shadow-xl transform transition-transform duration-300 ease-out
-                       translate-x-0 flex flex-col p-4 space-y-6 py-10 font-mono"
+            className="
+    w-3/4 max-w-xs bg-white shadow-xl transform transition-transform duration-300 ease-out
+    translate-x-0 flex flex-col p-6 py-10 font-mono relative
+  "
           >
-            {/* Logo */}
-            <h1 className="text-3xl font-bold text-blue-700 tracking-widest font-sassy">
-              AmeetFolio
-            </h1>
-            {/* Close button */}
-            <button
-              onClick={toggleMenu}
-              className="absolute top-4 right-4 text-gray-700 hover:text-blue-600"
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+            <div className="flex items-center justify-between mb-4">
+              {/* Logo */}
+              <h1 className="text-3xl font-bold text-blue-700 tracking-widest font-sassy">
+                Ameet.dev
+              </h1>
 
-            {[
-              { name: "Home", href: "#home" },
-              { name: "Projects", href: "#projects" },
-              { name: "Skills", href: "#skills" },
-              // { name: "About", href: "#about" },
-              { name: "Contact", href: "#contact" },
-            ].map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={handleLinkClick}
-                className="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200 text-lg"
+              {/* Close button */}
+              <button
+                onClick={toggleMenu}
+                className=" text-gray-700 hover:text-blue-600"
               >
-                {link.name}
-              </a>
-            ))}
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <hr className="border-gray-300 mb-4" />
+
+            {/* Navigation Links */}
+            <nav className="flex flex-col">
+              {[
+                { name: "Home", href: "#home" },
+                { name: "Projects", href: "#projects" },
+                { name: "Skills", href: "#skills" },
+                // { name: "About", href: "#about" },
+                { name: "Contact", href: "#contact" },
+              ].map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={handleLinkClick}
+                  className="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200 text-lg my-2"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </nav>
           </div>
         </div>
       )}
