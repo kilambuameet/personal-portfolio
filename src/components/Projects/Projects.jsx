@@ -1,21 +1,22 @@
 const projectsData = [
   {
     title: "Glosifi Web",
-    description: "A web platform to book an appointment.",
+    description:
+      "A web platform for booking appointments quickly and efficiently.",
     technologies: ["React", "Vite", "CSS"],
     liveDemo: "https://glosifi.com/",
     // sourceCode: "https://github.com/username/glosifi-web",
   },
   {
     title: "TextUtils",
-    description: "A utility app to manipulate and analyze text",
+    description: "A utility app to manipulate and analyze text with ease.",
     technologies: ["React", "JavaScript", "Tailwind CSS"],
     liveDemo: "https://github.com/kilambuameet/textutis",
     // sourceCode: "https://github.com/username/personal-website",
   },
   {
     title: "Sansa Chocolate",
-    description: "A website for a chocolate brand.",
+    description: "A website showcasing products for a chocolate brand.",
     technologies: ["HTML", "SASS", "CSS", "JavaScript"],
     liveDemo: "https://github.com/kilambuameet/sansachocolates",
     // sourceCode: "https://github.com/username/plugin-repo",
@@ -23,7 +24,7 @@ const projectsData = [
   {
     title: "Movie Explorer",
     description:
-      "Movie Explorer is a lightweight React + Vite application that allows users to quickly search for and discover movies powered by the TMDB (The Movie Database) API. The app provides an intuitive, responsive interface built with Tailwind CSS, making it easy to browse and explore movie details on any device.",
+      "A React + Vite app to search and explore movies using the TMDB API, built with Tailwind CSS.",
     technologies: [
       "TypeScript",
       "React",
@@ -36,14 +37,15 @@ const projectsData = [
   },
   {
     title: "Amira Care World",
-    description: "A website for parlor and beauty services.",
+    description:
+      "A responsive website for beauty services and parlor bookings.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     liveDemo: "https://www.amiracare.com.np/",
     // sourceCode: "https://github.com/username/plugin-repo",
   },
   {
     title: "Shantaj Beauty and Spa",
-    description: "A website for parlor and beauty services.",
+    description: "A website for parlor and beauty service bookings.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
     liveDemo: "https://www.shantaj.com.np/",
     // sourceCode: "https://github.com/username/plugin-repo",
