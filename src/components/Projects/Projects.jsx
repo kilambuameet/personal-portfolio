@@ -21,6 +21,20 @@ const projectsData = [
     // sourceCode: "https://github.com/username/plugin-repo",
   },
   {
+    title: "Movie Explorer",
+    description:
+      "Movie Explorer is a lightweight React + Vite application that allows users to quickly search for and discover movies powered by the TMDB (The Movie Database) API. The app provides an intuitive, responsive interface built with Tailwind CSS, making it easy to browse and explore movie details on any device.",
+    technologies: [
+      "TypeScript",
+      "React",
+      "Vite",
+      "React Query",
+      "Tailwind CSS",
+    ],
+    liveDemo: "https://kilambuameet.github.io/Movie-Explorer/",
+    // sourceCode: "https://github.com/username/plugin-repo",
+  },
+  {
     title: "Amira Care World",
     description: "A website for parlor and beauty services.",
     technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
