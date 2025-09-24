@@ -5,7 +5,10 @@ import SocialCards from "../cards/socialCards/SocialCards";
 const HeroSection = () => {
   return (
     <>
-      <section id="home" className="  py-12 lg:py-20 scroll-mt-10 bg-gradient-to-br from-blue-100 via-white to-blue-100">
+      <section
+        id="home"
+        className="  py-12 lg:py-20 scroll-mt-10 bg-gradient-to-br from-blue-100 via-white to-blue-100"
+      >
         <div className="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center justify-between">
           {/* Text Section */}
           <div className="w-full lg:w-2/4 text-center lg:text-left px-4 lg:px-0">
@@ -34,7 +37,10 @@ const HeroSection = () => {
 
             {/* Buttons */}
             <div className="flex justify-center lg:justify-start gap-4 pt-4 mt-4">
-              <a href="/AmitCV-2025.pdf" download="AmitCV-2025.pdf">
+              <a
+                href="/public/Amit-Frontend-2025.pdf"
+                download="Amit-Frontend-2025.pdf"
+              >
                 <Buttons
                   title="Download CV"
                   className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition"
