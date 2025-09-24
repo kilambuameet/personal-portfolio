@@ -41,7 +41,7 @@ const projectsData = [
     description:
       "A responsive multipage blog built with React, TypeScript, and Tailwind CSS, featuring post listing with pagination, detailed post pages, and smooth navigation using React Router. Posts are fetched from a free API (DummyJSON), and each post displays title, body, views, reactions, and tags. The UI includes modern card layouts, hover effects, and responsive design for mobile and desktop.",
     technologies: ["React", "Axios", "Vite", "Tailwind CSS", "TypeScript"],
-    liveDemo: "https://kilambuameet.github.io/posts",
+    liveDemo: "https://kilambuameet.github.io/blog-page/",
     screenshot: blog,
     category: "Blog App",
   },
