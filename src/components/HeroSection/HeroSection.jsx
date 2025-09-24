@@ -38,7 +38,7 @@ const HeroSection = () => {
             {/* Buttons */}
             <div className="flex justify-center lg:justify-start gap-4 pt-4 mt-4">
               <a
-                href="/public/Amit-Frontend-2025.pdf"
+                href="/Amit-Frontend-2025.pdf"
                 download="Amit-Frontend-2025.pdf"
               >
                 <Buttons
