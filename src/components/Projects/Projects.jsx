@@ -2,8 +2,8 @@ import glosifiWeb from "../../assets/glosifi-web.png";
 import weatherApp from "../../assets/weather-app.png";
 import shantajWeb from "../../assets/shantaj-web.png";
 import movieExplorer from "../../assets/movie-explorer.png";
-import textutils from "../../assets/textutils.png";
-import React from "react";
+import blog from "../../assets/blog.png";
+import React, { useState } from "react";
 
 const projectsData = [
   {
@@ -37,13 +37,13 @@ const projectsData = [
     category: "Entertainment App",
   },
   {
-    title: "TextUtils",
+    title: "Blog Page",
     description:
-      "TextUtils is a versatile utility application designed to help users manipulate and analyze text in multiple ways. Built using React and Tailwind CSS, it allows operations such as converting text cases, removing extra spaces, counting words and characters, and more. The intuitive interface ensures that users can quickly process and transform text for a variety of purposes, from academic writing to content creation.",
-    technologies: ["JavaScript"],
-    liveDemo: "https://github.com/kilambuameet/textutis",
-    screenshot: textutils,
-    category: "Utility Tool",
+      "A responsive multipage blog built with React, TypeScript, and Tailwind CSS, featuring post listing with pagination, detailed post pages, and smooth navigation using React Router. Posts are fetched from a free API (DummyJSON), and each post displays title, body, views, reactions, and tags. The UI includes modern card layouts, hover effects, and responsive design for mobile and desktop.",
+    technologies: ["React", "Axios", "Vite", "Tailwind CSS", "TypeScript"],
+    liveDemo: "https://kilambuameet.github.io/posts",
+    screenshot: blog,
+    category: "Blog App",
   },
   {
     title: "Weather App",
@@ -67,6 +67,7 @@ const projectsData = [
 
 const Projects = () => {
   const [expandedTechs, setExpandedTechs] = React.useState({});
+  const [showFull, setShowFull] = useState(false);
 
   const toggleTechExpansion = (index) => {
     setExpandedTechs((prev) => ({
@@ -142,9 +143,19 @@ const Projects = () => {
                   {project.title}
                 </h3>
 
-                <p className="text-slate-600 text-sm leading-relaxed mb-5 line-clamp-3">
-                  {project.description}
-                </p>
+                <div className="mb-5">
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {showFull
+                      ? project.description
+                      : `${project.description.slice(0, 120)}...`}
+                  </p>
+                  <button
+                    className="text-blue-500 text-xs font-medium hover:underline"
+                    onClick={() => setShowFull(!showFull)}
+                  >
+                    {showFull ? "See Less" : "See More"}
+                  </button>
+                </div>
 
                 {/* Technologies */}
                 <div className="flex flex-wrap gap-2 mb-6">

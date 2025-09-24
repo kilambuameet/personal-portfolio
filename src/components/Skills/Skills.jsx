@@ -1,7 +1,15 @@
 const skillsData = [
   {
     category: "Frontend Development",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Vite"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+    ],
   },
   {
     category: "Tools & Platforms",
