@@ -2,6 +2,7 @@
   "name": "npm",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://kilambuameet.github.io/mini-ecommerce",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,6 +2,8 @@ import glosifiWeb from "../../assets/glosifi-web.png";
 import weatherApp from "../../assets/weather-app.png";
 import shantajWeb from "../../assets/shantaj-web.png";
 import movieExplorer from "../../assets/movie-explorer.png";
+import miniEcommerce from "../../assets/miniEcommerce.png";
+import expenseTracker from "../../assets/expense-tracker.png";
 import blog from "../../assets/blog.png";
 import React, { useState } from "react";
 
@@ -20,6 +22,30 @@ const projectsData = [
     liveDemo: "https://glosifi.com/",
     screenshot: glosifiWeb,
     category: "Web Platform",
+  },
+  {
+    title: "Mini Ecommerce Store",
+    description:
+      "Mini E-commerce is a fully functional, responsive online store built with React, Tailwind CSS, and React Context API. Users can browse products, filter by category, view product details, add items to the cart, update quantities, and proceed to checkout with multiple payment options. The app features dynamic cart management, toast notifications, and a polished, mobile-friendly UI for a seamless shopping experience.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "React Router",
+      "React Context API",
+      "React Hot Toast",
+    ],
+    liveDemo: "https://kilambuameet.github.io/mini-ecommerce/",
+    screenshot: miniEcommerce,
+    category: "E-commerce App",
+  },
+  {
+    title: "Expense Tracker",
+    description:
+      "A responsive web application built with React + Vite and Tailwind CSS that helps users manage their finances efficiently. It allows users to add, edit, and delete transactions, view daily and monthly summaries, visualize income vs expenses with charts, and track their remaining balance — all in one clean dashboard.",
+    technologies: ["React", "Vite", "Tailwind CSS", "Recharts", "Context API"],
+    liveDemo: "https://kilambuameet.github.io/expense-tracker/",
+    screenshot: expenseTracker,
+    category: "Finance App",
   },
   {
     title: "Movie Explorer",
@@ -45,15 +71,7 @@ const projectsData = [
     screenshot: blog,
     category: "Blog App",
   },
-  {
-    title: "Weather App",
-    description:
-      "A responsive web application built with React + Vite and Tailwind CSS that allows users to check real-time weather conditions for any city. It fetches data from a weather API and displays temperature, humidity, wind speed, and weather icons, providing a simple and intuitive interface for quick weather updates.",
-    technologies: ["React", "JavaScript", "Tailwind CSS"],
-    liveDemo: "https://kilambuameet.github.io/weather-app/",
-    screenshot: weatherApp,
-    category: "Weather App",
-  },
+
   {
     title: "Shantaj Beauty and Spa",
     description:
